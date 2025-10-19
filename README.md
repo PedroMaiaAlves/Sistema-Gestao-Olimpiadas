@@ -99,9 +99,10 @@ O **SGO** tem como objetivo permitir o gerenciamento de **competições**, **ins
 ![🧩 Diagrama de Caso de Uso](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Caso%20de%20Uso%20SGO.png)
 
 ---
+
 ### 🏗️ Diagrama de Classes
 
-![🏗️ Diagrama de Classes]
+![🏗️ Diagrama de Classes](https://github.com/user-attachments/assets/ac7550ed-5815-43be-a34b-4bf4aa86c28a)
 
 ---
 ### 📦 Diagrama de Pacotes
@@ -111,8 +112,8 @@ O **SGO** tem como objetivo permitir o gerenciamento de **competições**, **ins
 ---
 
 ### ⚙️ Diagrama de Componentes
-![⚙️ Diagrama de Componentes]
 
+![⚙️ Diagrama de Componentes](https://github.com/user-attachments/assets/72f4c957-6bfe-474b-9144-22711caabee6)
 
 ---
 ### 🖥️ Diagrama de Implantação
