@@ -1,0 +1,174 @@
+# 🏅 Sistema de Gestão das Olimpíadas (SGO)
+
+> 📘 **Projeto de Modelagem UML**
+> Modelagem de um sistema para gerenciar as Olimpíadas — incluindo competições, inscrições, locais, resultados e relatórios de medalhas.
+
+---
+
+## 📖 Descrição do Sistema
+
+Com a chegada das Olimpíadas, um novo sistema de gestão é necessário para coordenar os diferentes aspectos do evento.
+O **SGO** tem como objetivo permitir o gerenciamento de **competições**, **inscrições de atletas**, **alocação de locais**, **controle de resultados** e **relatórios de medalhas**.
+
+---
+
+## 🧠 Regras de Negócio
+
+1. **Cadastro de Competições**
+
+   * Permitir o cadastro de competições com nome, modalidade, data, horário, local e lista de atletas inscritos.
+
+2. **Inscrição de Atletas**
+
+   * Atletas de diferentes países se inscrevem em competições específicas.
+   * Um atleta pode participar de várias competições, mas só pode representar **um país por modalidade**.
+
+3. **Alocação de Locais**
+
+   * Um local pode receber **apenas uma competição por vez**, evitando conflitos de horário.
+
+4. **Controle de Resultados**
+
+   * Após a realização da competição, registrar os resultados (ouro, prata e bronze).
+
+5. **Relatórios de Medalhas**
+
+   * Gerar relatórios de medalhas por país, exibindo o desempenho geral (ouro, prata e bronze).
+
+---
+
+## 👥 Atores Principais
+
+| Ator              | Descrição                                      |
+| ----------------- | ---------------------------------------------- |
+| **Administrador** | Gerencia competições, locais e relatórios      |
+| **Atleta**        | Realiza inscrições e participa das competições |
+| **Sistema**       | Processa dados e garante regras de negócio     |
+
+---
+
+## 🧩 Casos de Uso Principais
+
+| Caso de Uso                     | Descrição                                                  |
+| ------------------------------- | ---------------------------------------------------------- |
+| **Cadastrar Competição**        | Administrador registra nova competição                     |
+| **Inscrever Atleta**            | Atleta realiza inscrição em uma competição                 |
+| **Alocar Local**                | Sistema reserva o local de acordo com o horário disponível |
+| **Registrar Resultados**        | Sistema ou administrador insere resultados                 |
+| **Gerar Relatório de Medalhas** | Sistema gera relatório com ranking de países               |
+
+---
+
+## 🧱 Estrutura do Repositório
+
+```
+📦 sistema-gestao-olimpiadas
+ ┣ 📂 imagens
+ ┃ ┣ diagrama-de-caso-de-uso.png
+ ┃ ┣ diagrama-de-classes.png
+ ┃ ┣ diagrama-de-pacotes.png
+ ┃ ┣ diagrama-de-componentes.png
+ ┃ ┗ diagrama-de-implantacao.png
+ ┣ 📂 modelagens
+ ┃ ┣ diagrama-de-caso-de-uso.drawio
+ ┃ ┣ diagrama-de-classes.drawio
+ ┃ ┣ diagrama-de-pacotes.drawio
+ ┃ ┣ diagrama-de-componentes.drawio
+ ┃ ┗ diagrama-de-implantacao.drawio
+ ┗ 📄 README.md
+```
+
+---
+
+## 🌍 Histórias de Usuário
+
+| Código   | História                                                                                             |
+| -------- | ---------------------------------------------------------------------------------------------------- |
+| **US01** | Como **administrador**, quero cadastrar novas competições para definir o cronograma oficial.         |
+| **US02** | Como **atleta**, quero me inscrever em competições específicas para poder competir.                  |
+| **US03** | Como **organizador**, quero alocar locais de forma a evitar conflitos de horário.                    |
+| **US04** | Como **administrador**, quero registrar os resultados das competições para determinar os vencedores. |
+| **US05** | Como **usuário**, quero visualizar relatórios de medalhas por país para acompanhar o desempenho.     |
+
+---
+
+## 🎯 Diagramas UML
+
+### 🧩 Diagrama de Caso de Uso
+
+<img width="500px" src="./imagens/diagrama-de-caso-de-uso.png"/>
+
+---
+
+### 🏗️ Diagrama de Classes
+
+<img width="500px" src="./imagens/diagrama-de-classes.png"/>
+
+---
+
+### 📦 Diagrama de Pacotes
+
+<img width="500px" src="./imagens/diagrama-de-pacotes.png"/>
+
+---
+
+### ⚙️ Diagrama de Componentes
+
+<img width="500px" src="./imagens/diagrama-de-componentes.png"/>
+
+---
+
+### 🖥️ Diagrama de Implantação (PlantUML)
+
+```@startuml
+package "Frontend" {
+[Web UI]
+[Mobile App]
+}
+
+
+package "Backend" {
+component "API Gateway" as API
+component "InscricaoService" as Insc
+component "AlocacaoService" as Aloc
+component "ResultadoService" as Res
+component "RelatorioService" as Rel
+}
+
+
+database "Inscricao-DB" as InscricaoDB
+database "Alocacao-DB" as AlocacaoDB
+database "Resultado-DB" as ResultadoDB
+database "Relatorio-DB" as RelatorioDB
+
+
+[Web UI] --> API
+[Mobile App] --> API
+API --> Insc
+API --> Aloc
+API --> Res
+API --> Rel
+Insc --> InscricaoDB
+Aloc --> AlocacaoDB
+Res --> ResultadoDB
+Rel --> RelatorioDB
+@enduml
+```
+
+---
+
+## 💡 Tecnologias Utilizadas
+
+* 🖊️ **PlantUML / Draw.io / Astah** → para a modelagem dos diagramas
+* 🗂️ **Markdown (README.md)** → para documentação no GitHub
+* 🧠 **Modelagem Orientada a Objetos (UML)**
+
+---
+
+## ✨ Autor
+
+👤 **Pedro Henrique Maia**
+📘 Projeto acadêmico — Engenharia de Software
+💻 [GitHub](https://github.com/pedrohmaia)
+
+---
