@@ -1,0 +1,55 @@
+@startuml
+' Diagrama de Pacotes - Sistema de Gestão das Olimpíadas (SGO)
+skinparam packageStyle rectangle
+
+package "ui" as UI {
+  [WebUI]
+  [MobileUI]
+}
+
+package "service" as SVC {
+  [InscricaoService]
+  [AlocacaoService]
+  [ResultadoService]
+  [RelatorioService]
+}
+
+package "repository" as REP {
+  [CompeticaoRepository]
+  [AtletaRepository]
+  [LocalRepository]
+  [ResultadoRepository]
+  [PaisRepository]
+}
+
+package "model" as MDL {
+  [class Competicao]
+  [class Inscricao]
+  [class Atleta]
+  [class Local]
+  [class Resultado]
+  [class Pais]
+  [class MedalhaResumo]
+}
+
+package "config" as CFG {
+  [SecurityConfig]
+  [DatabaseConfig]
+  [AppProperties]
+}
+
+package "integration" as INT {
+  [AuthProvider]
+  [NotificationService]
+}
+
+' --- Dependências entre pacotes ---
+UI --> SVC : usa
+SVC --> REP : persiste / consulta
+SVC --> MDL : manipula objetos de domínio
+REP --> MDL : usa entidades
+SVC --> INT : integra com terceiros
+UI --> INT : notificações / autenticação externa
+CFG --> REP : configura conexões
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+node "Browser / Mobile" as client
+node "Load Balancer" as lb
+node "Web Server (Nginx)" as web
+node "App Server (SGO)" as app
+node "Database Server" as db
+
+
+client --> lb
+lb --> web
+web --> app
+app --> db
+@enduml

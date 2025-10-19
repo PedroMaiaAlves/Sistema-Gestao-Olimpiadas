@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+actor "Organizador" as Organizador
+actor "Atleta" as Atleta
+actor "Administrador de Locais" as AdminLoc
+actor "Arbitro" as Arbitro
+actor "Visitante" as Visitante
+
+
+package "SGO" {
+usecase "Cadastrar Competição" as UC1
+usecase "Inscrever Atleta" as UC2
+usecase "Alocar Local" as UC3
+usecase "Registrar Resultados" as UC4
+usecase "Gerar Relatório de Medalhas" as UC5
+}
+
+
+Organizador --> UC1
+Atleta --> UC2
+AdminLoc --> UC3
+Arbitro --> UC4
+Visitante --> UC5
+Organizador --> UC5
+Arbitro --> UC5
+
+
+UC2 .> UC1 : <<includes>>
+UC3 .> UC1 : <<extends>>
+@enduml
