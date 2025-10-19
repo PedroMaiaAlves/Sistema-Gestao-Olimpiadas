@@ -94,24 +94,24 @@ O **SGO** tem como objetivo permitir o gerenciamento de **competições**, **ins
 
 ## 🎯 Diagramas UML
 
-[🧩 Diagrama de Caso de Uso](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Caso%20de%20Uso%20SGO.png)
+![🧩 Diagrama de Caso de Uso](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Caso%20de%20Uso%20SGO.png)
 
 ---
 
-[🏗️ Diagrama de Classes]
+![🏗️ Diagrama de Classes]
 
 ---
 
-[📦 Diagrama de Pacotes](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Pacotes.png)
+![📦 Diagrama de Pacotes](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Pacotes.png)
 
 ---
 
-[⚙️ Diagrama de Componentes]
+![⚙️ Diagrama de Componentes]
 
 
 ---
 
-[🖥️ Diagrama de Implantação](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Impalntacao.png)
+![🖥️ Diagrama de Implantação](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Implanta%C3%A7%C3%A3o.png)
 
 ---
 
