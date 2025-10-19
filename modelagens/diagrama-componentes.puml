@@ -1,0 +1,27 @@
+@startuml
+package "Frontend" {
+  [Web UI]
+  [Mobile App]
+}
+
+package "Backend" {
+  component "API Gateway" as API
+  component "InscricaoService" as Insc
+  component "AlocacaoService" as Aloc
+  component "ResultadoService" as Res
+  component "RelatorioService" as Rel
+}
+
+database "SGO-DB" as DB
+
+[Web UI] --> API
+[Mobile App] --> API
+API --> Insc
+API --> Aloc
+API --> Res
+API --> Rel
+Insc --> DB
+Aloc --> DB
+Res --> DB
+Rel --> DB
+@enduml

@@ -1,0 +1,65 @@
+@startuml
+
+class Competicao {
++id: Long
++modalidade: String
++dataHoraInicio: DateTime
++duracaoMinutos: int
++getPeriodo(): Interval
+}
+
+
+class Inscricao {
++id: Long
++competicao: Competicao
++atleta: Atleta
++paisRepresentado: Pais
+}
+
+
+class Atleta {
++id: Long
++nome: String
++dataNascimento: Date
+}
+
+
+class Pais {
++id: Long
++nome: String
++codigoISO: String
+}
+
+
+class Local {
++id: Long
++nome: String
++endereco: String
++capacidade: int
+}
+
+
+class Resultado {
++id: Long
++competicao: Competicao
++primeiro: Atleta
++segundo: Atleta
++terceiro: Atleta
+}
+
+
+class MedalhaResumo {
++pais: Pais
++ouro: int
++prata: int
++bronze: int
+}
+
+
+Competicao "1" o-- "*" Inscricao
+Inscricao "*" -- "1" Atleta
+Pais "1" o-- "*" Atleta
+Competicao "1" -- "1" Local
+Competicao "1" -- "0..1" Resultado
+Pais "1" -- "0..1" MedalhaResumo
+@enduml
