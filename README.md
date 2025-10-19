@@ -64,17 +64,17 @@ O **SGO** tem como objetivo permitir o gerenciamento de **competições**, **ins
 ```
 📦 sistema-gestao-olimpiadas
  ┣ 📂 imagens
- ┃ ┣ diagrama-de-caso-de-uso.png
+ ┃ ┣ Diagrama de Caso de Uso SGO.png
  ┃ ┣ diagrama-de-classes.png
- ┃ ┣ diagrama-de-pacotes.png
+ ┃ ┣ Diagrama de Pacotes.png
  ┃ ┣ diagrama-de-componentes.png
- ┃ ┗ diagrama-de-implantacao.png
+ ┃ ┗ Diagrama de Implantação.png
  ┣ 📂 modelagens
- ┃ ┣ diagrama-de-caso-de-uso.drawio
+ ┃ ┣ diagrama-caso-uso.puml
  ┃ ┣ diagrama-de-classes.drawio
- ┃ ┣ diagrama-de-pacotes.drawio
+ ┃ ┣ diagrama-pacotes.puml
  ┃ ┣ diagrama-de-componentes.drawio
- ┃ ┗ diagrama-de-implantacao.drawio
+ ┃ ┗ diagrama-implantacao.puml
  ┗ 📄 README.md
 ```
 
