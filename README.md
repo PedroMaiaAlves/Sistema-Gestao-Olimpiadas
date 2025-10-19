@@ -94,72 +94,30 @@ O **SGO** tem como objetivo permitir o gerenciamento de **competições**, **ins
 
 ## 🎯 Diagramas UML
 
-### 🧩 Diagrama de Caso de Uso
-
-<img width="500px" src="./imagens/diagrama-de-caso-de-uso.png"/>
+[🧩 Diagrama de Caso de Uso](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Caso%20de%20Uso%20SGO.png)
 
 ---
 
-### 🏗️ Diagrama de Classes
-
-<img width="500px" src="./imagens/diagrama-de-classes.png"/>
+[🏗️ Diagrama de Classes]
 
 ---
 
-### 📦 Diagrama de Pacotes
-
-<img width="500px" src="./imagens/diagrama-de-pacotes.png"/>
+[📦 Diagrama de Pacotes](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Pacotes.png)
 
 ---
 
-### ⚙️ Diagrama de Componentes
+[⚙️ Diagrama de Componentes]
 
-<img width="500px" src="./imagens/diagrama-de-componentes.png"/>
 
 ---
 
-### 🖥️ Diagrama de Implantação (PlantUML)
-
-```@startuml
-package "Frontend" {
-[Web UI]
-[Mobile App]
-}
-
-
-package "Backend" {
-component "API Gateway" as API
-component "InscricaoService" as Insc
-component "AlocacaoService" as Aloc
-component "ResultadoService" as Res
-component "RelatorioService" as Rel
-}
-
-
-database "Inscricao-DB" as InscricaoDB
-database "Alocacao-DB" as AlocacaoDB
-database "Resultado-DB" as ResultadoDB
-database "Relatorio-DB" as RelatorioDB
-
-
-[Web UI] --> API
-[Mobile App] --> API
-API --> Insc
-API --> Aloc
-API --> Res
-API --> Rel
-Insc --> InscricaoDB
-Aloc --> AlocacaoDB
-Res --> ResultadoDB
-Rel --> RelatorioDB
-@enduml
-```
+[🖥️ Diagrama de Implantação](https://github.com/PedroMaiaAlves/Sistema-Gestao-Olimpiadas/blob/main/imagens/Diagrama%20de%20Impalntacao.png)
 
 ---
 
 ## 💡 Tecnologias Utilizadas
 
-* 🖊️ **PlantUML / Draw.io / Astah** → para a modelagem dos diagramas
+* 🖊️ **PlantUML** → para a modelagem dos diagramas
 * 🗂️ **Markdown (README.md)** → para documentação no GitHub
 * 🧠 **Modelagem Orientada a Objetos (UML)**
 
@@ -169,6 +127,6 @@ Rel --> RelatorioDB
 
 👤 **Pedro Henrique Maia**
 📘 Projeto acadêmico — Engenharia de Software
-💻 [GitHub](https://github.com/pedrohmaia)
+💻 [GitHub](https://github.com/PedroMaiaAlves)
 
 ---
