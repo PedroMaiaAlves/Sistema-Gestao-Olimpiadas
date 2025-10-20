@@ -136,4 +136,8 @@ O **SGO** tem como objetivo permitir o gerenciamento de **competições**, **ins
 📘 Projeto acadêmico — Engenharia de Software
 💻 [GitHub](https://github.com/PedroMaiaAlves)
 
+👤 **João Gabriel Santos Andrade Almeida**
+📘 Projeto acadêmico — Engenharia de Software
+💻 [GitHub](https://github.com/JoaoAlmeida02)
+
 ---
